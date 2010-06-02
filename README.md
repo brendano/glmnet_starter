@@ -8,10 +8,10 @@ The writeup `finance_lasso_report.pdf` is most likely to be helpful to read.
 
 The glmnet paper is:
 
-Jerome H. Friedman, Trevor Hastie, Rob Tibshirani
-Regularization Paths for Generalized Linear Models via Coordinate Descent
-Journal of Statistial Software, Vol. 33, Issue 1, Feb 2010
-http://www.jstatsoft.org/v33/i01
+    Jerome H. Friedman, Trevor Hastie, Rob Tibshirani
+    Regularization Paths for Generalized Linear Models via Coordinate Descent
+    Journal of Statistial Software, Vol. 33, Issue 1, Feb 2010
+    http://www.jstatsoft.org/v33/i01
 
 
 From Brendan O'Connor - http://anyall.org
