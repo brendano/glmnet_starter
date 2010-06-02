@@ -1,0 +1,512 @@
+eval_multi_run(r5,data)
+r5=run_all_splits(data, dfmax=500)
+eval_multi_run(r5,data)
+pred=multi_predict(r5,data)
+multi_predict
+pred=multi_predict(r5,lambda=.025)
+pred
+data$doc_id
+data.frame(data$doc_id,pred)
+doc_pred=data.frame(data$doc_id,data$y,pred)
+head(doc_pred)
+doc_pred=doc_pred[order(doc_pred$pred),]
+doc_pred
+?write.table
+write.table(doc_pred,"bla",row.names=F,header=F)
+write.table(doc_pred,"bla",row.names=F,col.names=F)
+head(doc_pred)
+vim("r.r");source("r.r")
+doc_pred=data.frame(data$doc_id,data$y,pred)
+doc_pred
+doc_pred$doc_id
+doc_pred$doc
+doc_pred[,1]
+write.table(doc_pred,"bla",row.names=F,col.names=F)
+write.table(doc_pred,"bla",row.names=F,col.names=F,quote=F)
+doc_pred=data.frame(data$doc_id,data$y,pred); doc_pred=doc_pred[order(doc_pred$pred),]
+write.table(doc_pred,"bla",row.names=F,col.names=F,quote=F)
+doc_pred=data.frame(data$doc_id,data$y,pred, corr=if((pred>0)==data$y,"RIGHT","WRONG")); doc_pred=doc_pred[order(doc_pred$pred),]
+doc_pred=data.frame(data$doc_id,data$y,pred, corr=if((pred>0)==data$y,"RIGHT","WRONG")); doc_pred=doc_pred[order(doc_pred$pred),]
+doc_pred=data.frame(data$doc_id,data$y,pred, corr=ifelse((pred>0)==data$y,"RIGHT","WRONG")); doc_pred=doc_pred[order(doc_pred$pred),]
+write.table(doc_pred,"bla",row.names=F,col.names=F,quote=F)
+corr
+doc_pred
+doc_pred$corr
+mean(doc_pred$corr)
+table(doc_pred$corr)
+z=word_report(m$beta[,1],data); z[order(z$weight),]
+vim("r.r");source("r.r")
+data$y
+r5=run_all_splits(data, dfmax=500)
+pred=multi_predict(r5,lambda=.025)
+mean(corr(predict(m,data$x)[,1]))
+corr
+data$y
+rm(m)
+doc_pred=data.frame(data$doc_id,data$y,pred, corr=ifelse((pred>0)==data$y,"RIGHT","WRONG")); doc_pred=doc_pred[order(doc_pred$pred),]
+doc_pred
+write.table(doc_pred,"bla",row.names=F,col.names=F,quote=F)
+head(doc_pred)
+head(m$beta[,1])
+r5[[2]]
+vim("r.r");source("r.r")
+write_model(r5[[1]]$r$m$beta[,1], "bla")
+vim("r.r");source("r.r")
+write_model(r5[[1]]$r$m$beta[,1], "bla")
+vim("r.r");source("r.r")
+write_model(r5[[1]]$r$m$beta[,1], "bla")
+?write.table
+vim("r.r");source("r.r")
+write_model(r5[[1]]$r$m$beta[,1], "bla")
+write_model(r5[[1]]$r$m$beta[,1], "bla")
+vim("r.r");source("r.r")
+write_model
+write_model(r5[[1]]$r$m$beta[,1], "bla")
+(r5[[1]]$r$m$beta[,1]
+r5[[1]]$r$m$beta[,1]
+r5=run_all_splits(data,lambda=.025)
+eval_multi_run(r5,data)
+write_model(r5[[1]]$r$m$beta[,1], "bla")
+names(r5[[1]]$r$m)
+r5[[1]]$r$m$a0
+r5[[1]]$r$m
+show_words(m$beta[,1])
+show_words(r5[[1]]$rm$beta[,1])
+show_words(r5[[1]]$r$m$beta[,1])
+write.table(doc_pred,"bla",row.names=F,col.names=F,quote=F)
+write_model(r5[[1]]$r$m$beta[,1], "model")
+r5[[1]]$r$m
+r5[[1]]$r$m
+which(row.names(m$beta)=='bouncy')
+show_words(r5[[1]]$r$m$beta[,1])
+summary(r5[[1]]$r$m$beta[,1])
+summary(r5[[1]]$r$m$beta[,1]*1000)
+summary
+(r5[[1]]$r$m$beta[,1])
+show_words(r5[[1]]$r$m$beta[,1])
+summary(show_words(r5[[1]]$r$m$beta[,1]))
+vim("bla")
+vim("model")
+adfs
+source("r.r")
+gc()
+ls()
+doc_pred=data.frame(data$doc_id,data$y,pred, corr=ifelse((pred>0)==data$y,"RIGHT","WRONG")); doc_pred=doc_pred[order(doc_pred$pred),]
+dim(doc_pred)
+doc_pred=with(data,data.frame(doc_id,y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG"))); doc_pred=doc_pred[order(doc_pred$pred),]
+dim(doc_pred)
+dim(doc_pred)
+head(doc_pred)
+rm(sp)
+gc()
+r5[[1]]$sp
+r5[[1]]$sp$test$inds
+write.table(doc_pred[,r5[[1]]$sp$test$inds],"bla",row.names=F,col.names=F,quote=F)
+write.table(doc_pred[r5[[1]]$sp$test$inds,],"bla",row.names=F,col.names=F,quote=F)
+write.table(doc_pred[r5[[2]]$sp$test$inds,],"bla",row.names=F,col.names=F,quote=F)
+write_model(r5[[2]]$r$m$beta[,1], "model")
+savehistory()
+sp=fold_split(data,1)
+show_words(r5[[1]]$r$m$beta[,1])
+write_model(r5[[1]]$r$m$beta[,1], "model")
+write.table(doc_pred[r5[[1]]$sp$test$inds,],"bla",row.names=F,col.names=F,quote=F)
+show_words(r5[[1]]$r$m$beta[,1])
+beta=r5[[1]]$r$m$beta[,1]
+which(beta!=0)
+vim("r.r");source("r.r")
+source("r.r")
+vim("r.r");source("r.r")
+beta=r5[[1]]$r$m$beta[,1]
+which(beta!=0)
+show_words(r5[[1]]$r$m$beta[,1])
+which(beta!=0)
+z=(beta!=0) & !(names(beta)  %in% c('is','and','also','have','as','very'))
+table(z)
+m=with(sp$train,glmnet(x[,z],y))
+m
+pred=with(sp$test,predict(m,x[,z]))
+pred
+vim("r.r");source("r.r")
+with(sp$test, sapply(1:ncol(pred), function(i) mean(pred[,i]>0 == y)))
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+z=!(names(beta)  %in% c('is','and','also','have','as','very'))
+table(z)
+m=with(sp$train,glmnet(x[,z],y))
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+pred=with(sp$test,predict(m,x[,z]))
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+z
+z=!(names(beta)  %in% c('ZZZZZZZZZZZZZZZZZZZZZZZZZZ'))
+table(z)
+m=with(sp$train,glmnet(x[,z],y))
+pred=with(sp$test,predict(m,x[,z]))
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+m=with(sp$train,glmnet(x[,z],y,lambda=.024))
+sp$train$y
+pred=with(sp$test,predict(m,x[,z]))
+table(z)
+dim(sp$train$x)
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+pred
+r5_works=r5
+vim("r.r");source("r.r")
+r5=run_all_splits(data,lambda=.025)
+pred=multi_predict(r5,lambda=.025)
+pred
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+eval_multi_run(r5,data)
+pred=with(sp$test,predict(r5[[1]]$r$m,x[,z]))
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+sp=fold_split(data,1)
+m=with(sp$train,glmnet(x[,z],y,lambda=.025))
+dim(sp$train$x)
+class(sp$train$x)
+pred=with(sp$test,predict(m,x[,z]))
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+dim(pred)
+mean((pred[,1]>0)==sp$test$y)
+m$beta
+show_words(m$beta)
+show_words(m$beta[,1])
+x
+rm(x)
+y
+sp$train
+sp$train$inds
+r5[[1]]$sp$train$inds
+dim(data$x)
+length(r5[[1]]$sp$train$inds)
+m=with(sp$train,glmnet(x[,z],y,lambda=.025))
+pred=with(sp$test,predict(m,x[,z]))
+with(sp$test, sapply(1:ncol(pred), function(i) mean(pred[,i]>0 == y)))
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+pred=with(sp$test,predict(m,x[,z]))
+with(sp$test, sapply(1:ncol(pred), function(i) mean((pred[,i]>0) == y)))
+pred=with(sp$test,predict(m,x[,z]))
+boxplot(sp$test$y,pred)
+pred=with(sp$test,predict(r5[[1]]$r$m,x[,z]))
+boxplot(sp$test$y,pred)
+mean((pred[,1]>0)==y)
+mean((pred[,1]>0)==sp$test$y)
+sp=fold_split(data,1)
+vim("r.r");source("r.r")
+gc()
+rm(m)
+r=run_split(r,lambda=.024)
+r=run_split(sp,lambda=.024)
+r
+r$acc
+r$pred
+vim("r.r");source("r.r")
+eval_run(r)
+x
+y
+vim("r.r");source("r.r")
+eval_run(r)
+r=run_split(sp,dfmax=300)
+eval_run(r)
+r=run_split(sp,dfmax=1000)
+eval_run(r)
+r=run_split(sp,dfmax=1000,alpha=.8)
+eval_run(r)
+?glmnet
+alphas=seq(.1,1,by=.1)
+res_alphas=lapply(alphas,function(a) run_split(sp,dfmax=2000,alpha=a))
+eval_run(res_alphas[[1]])
+eval_run(res_alphas[[2]])
+eval_run(res_alphas[[3]])
+eval_run(res_alphas[[4]])
+eval_run(res_alphas[[5]])
+eval_run(res_alphas[[6]])
+eval_run(res_alphas[[7]])
+eval_run(res_alphas[[9]])
+eval_run(res_alphas[[10]])
+alphas
+eval_run(res_alphas[[11]])
+res_alphas[[3]]
+dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],acc=res_alphas[[i]]$acc))
+dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$df,acc=res_alphas[[i]]$acc))
+dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$df,acc=res_alphas[[i]]$acc))
+res_alphas[[3]]
+names(res_alphas[[3]])
+dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,acc=res_alphas[[i]]$acc))
+z=dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,acc=res_alphas[[i]]$acc))
+head(z)
+library(ggplot2)
+qplot(df,acc,colour=alpha,data=z)
+qplot(df,acc,colour=alpha,data=z,geom='line')
+qplot(df,acc,group=alpha,data=z,geom='line')
+qplot(df,acc,group=alpha,colour=alpha,data=z,geom='line')
+vim("~/dlanalysis/util.r")
+c(NULL,5)
+vim("~/dlanalysis/util.r")
+source("~/dlanalysis/util.r")
+grid_points(1,10)
+vim("~/dlanalysis/util.r")
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+grid_points(1,10)
+grid_points(1,11)
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+grid_points(1,11)
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+grid_points(1,11)
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+grid_points(1,11)
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+grid_points(1,11)
+alphas2=grid_points(.01,.1)
+alphas2
+res_alphas2=lapply(alphas2,function(a) run_split(sp,dfmax=2000,alpha=a))
+q=c(res_alphas,res_alphas2)
+q
+length(q)
+q[[1]]
+rm(q)
+res_alphas_all=c(res_alphas,res_alphas2)
+alphas_all=c(alphas,alphas2)
+alphas1=alphas
+res_alphas1=res_alphas
+res_alphas=c(res_alphas1,res_alphas2)
+alphas=c(alphas1,alphas2)
+rm(alphas_all)
+rm(res_alphas_all)
+z=dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,acc=res_alphas[[i]]$acc))
+z
+qplot(df,acc,group=alpha,colour=alpha,data=z,geom='line')
+qplot(df,acc,group=alpha,colour=factor(alpha),data=z,geom='line')
+alphas=c(alphas2,alphas1); alphas=alphas[1:5]
+res_alphas=c(res_alphas2,res_alphas1)[1:5]
+z=dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,acc=res_alphas[[i]]$acc))
+qplot(df,acc,group=alpha,colour=factor(alpha),data=z,geom='line')
+alphas=grid_points(.01,1)
+alphas
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+alphas=grid_points(.01,1)
+alphas
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+alphas=grid_points(.01,1)
+alphas
+0.1*10
+0.1*10 < 1
+0.1*10 <= 1+1e10
+0.1*10 <= 1
+vim("~/dlanalysis/util.r");source("~/dlanalysis/util.r")
+alphas=grid_points(.01,1)
+alphas
+res_alphas=lapply(alphas,function(a) run_split(sp,dfmax=2000,alpha=a))
+z=dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,acc=res_alphas[[i]]$acc))
+qplot(df,acc,group=alpha,colour=factor(alpha),data=z,geom='line')
+res_alphas=lapply(alphas,function(a) run_split(sp,dfmax=5000,alpha=a))
+qplot(df,acc,group=alpha,colour=(alpha),data=z,geom='line')
+qplot(df,acc,group=alpha,colour=alpha,data=z,geom='line')
+qplot(df,acc,group=alpha,colour=factor(alpha),linetype=factor(alpha),data=z,geom='line')
+qplot(df,acc,group=alpha,colour=factor(alpha),linetype=factor(alpha),data=z,geom='line')+theme_bw()
+z=dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,acc=res_alphas[[i]]$acc))
+qplot(df,acc,group=alpha,colour=factor(alpha),linetype=factor(alpha),data=z,geom='line')+theme_bw()
+qplot(df,acc,group=alpha,colour=factor(alpha),linetype=factor(alpha),data=z,geom='line',xlim=c(0,3000))+theme_bw()
+qplot(df,acc,group=alpha,colour=factor(alpha),linetype=factor(alpha),data=subset(z,z$alpha!=0.2),geom='line',xlim=c(0,3000))+theme_bw()
+qplot(df,acc,group=alpha,colour=factor(alpha),data=subset(z,z$alpha!=0.2),geom='line',xlim=c(0,3000))+theme_bw()
+?glmnet
+?glmnet
+alphas
+subset(z,alpha==.02(
+subset(z,alpha==.02)
+z=dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,lambda=res_alphas[[i]]$m$lambda,acc=res_alphas[[i]]$acc))
+subset(z,alpha==.02)
+subset(z,alpha==.02)
+?glmnet
+m=with(sp$train,glmnet(x[,z],y,alpha=.02,lambda=1.15))
+r=run_split(sp,dfmax=2000,alpha=.02,lambda=1.15)
+r
+eval_run(r)
+m=r$m
+m$beta[,1]
+show_model(m$beta[,1])
+show_words(m$beta[,1])
+write_model(r$m$beta[,1], "ridge_model")
+pred=with(sp$test,predict(m,x))
+mean((pred[,1]>0)==sp$test$y)
+doc_pred=with(data,data.frame(doc_id,y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG"))); doc_pred=doc_pred[order(doc_pred$pred),]
+doc_id
+doc_pred=with(sp$test,data.frame(doc_id,y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG"))); doc_pred=doc_pred[order(doc_pred$pred),]
+doc_pred=with(sp$test,data.frame(data$doc_id[sp$test$inds],y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG"))); doc_pred=doc_pred[order(doc_pred$pred),]
+data$doc_id
+sp$test$inds
+doc_pred=with(sp$test,data.frame(data$doc_id[inds],y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG"))); doc_pred=doc_pred[order(doc_pred$pred),]
+doc_pred=with(sp$test,data.frame(data$doc_id[inds],y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG")))
+head(doc_pred)
+doc_pred=with(sp$test,data.frame(doc_id=data$doc_id[inds],y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG")))
+head(doc_pred)
+doc_pred=with(sp$test,data.frame(doc_id=data$doc_id[inds], y, pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG")))
+head(doc_pred)
+doc_pred=with(sp$test,data.frame(doc_id=data$doc_id[inds], y, pred=pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG")))
+head(doc_pred)
+doc_pred=with(sp$test,data.frame(doc_id=data$doc_id[inds], y=y, pred=pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG")))
+head(doc_pred)
+pred
+pred=with(sp$test,predict(m,x))
+pred=with(sp$test,predict(m,x))[,1]
+doc_pred=with(sp$test,data.frame(data$doc_id[inds],y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG"))); doc_pred=doc_pred[order(doc_pred$pred),]
+write.table(doc_pred,"ridge_fold1",row.names=F,col.names=F,quote=F)
+hist(m$beta[,1])
+hist(sqrt(m$beta[,1]))
+hist(sqrt(m$beta[,1]))
+summary(m$beta[,1])
+z=beta[beta!=0)
+z=beta[beta!=0]
+summary(m$beta[,1])
+summary(z)
+hist(z)
+pred=with(sp$test,predict(r5[[1]]$r$m,x))
+pred=with(sp$test,predict(r5[[1]]$r$m,x))[,1]
+doc_pred=with(sp$test,data.frame(data$doc_id[inds],y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG"))); doc_pred=doc_pred[order(doc_pred$pred),]
+mean((pred[,1]>0)==sp$test$y)
+mean((pred>0)==sp$test$y)
+write.table(doc_pred,"lasso_fold1",row.names=F,col.names=F,quote=F)
+doc_pred=with(sp$test,data.frame(data$doc_id[inds],y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG"))); doc_pred=doc_pred[order(doc_pred$pred),]
+doc_pred[,1]
+z1=doc_pred[,1]
+write.table(doc_pred,"lasso_fold1",row.names=F,col.names=F,quote=F)
+r_lasso=run_split(sp,alpha=1,lambda=.024)
+eval_run(r_lasso)
+r_a02=run_split(sp,dfmax=2000,alpha=.02,lambda=1.15)
+eval_run(r_a02)
+pred=with(sp$test,predict(r_lasso,x))[,1]
+pred=with(sp$test,predict(r_lasso$m,x))[,1]
+doc_pred1=with(sp$test,data.frame(data$doc_id[inds],y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG")))
+pred=with(sp$test,predict(r_a02$m,x))[,1]
+doc_pred2=with(sp$test,data.frame(data$doc_id[inds],y,pred, corr=ifelse((pred>0)==y,"RIGHT","WRONG")))
+table.freq(doc_pred2$corr)
+table.freq(doc_pred1$corr)
+plot(doc_pred1$pred, doc_pred2$pred)
+rm(doc_pred)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred1$corr=="RIGHT","blue","red"))
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred1$corr=="RIGHT","","red"))
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred1$corr=="RIGHT","black","red"))
+abline(h=0)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred2$corr=="RIGHT","black","red"))
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred2$corr=="RIGHT","black","red"));abline(h=0)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred2$corr=="RIGHT","black","red"));abline(h=0)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred1$corr=="RIGHT","black","red"));abline(h=0)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred2$corr=="RIGHT","black","red"));abline(h=0)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred1$corr=="RIGHT","black","red"));abline(h=0)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred2$corr=="RIGHT","black","red"));abline(h=0)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred1$corr=="RIGHT","black","red"));abline(h=0)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred2$corr=="RIGHT","black","red"));abline(h=0)
+doc_pred1$corr
+which(doc_pred1$corr=="RIGHT" & doc_pred2$corr=="WRONG)
+which(doc_pred1$corr=="RIGHT" & doc_pred2$corr=="WRONG")
+which(doc_pred1$corr=="WRONG" & doc_pred2$corr=="RIGHT")
+abline(a=1)
+abline(a=1,b=0)
+?abline
+abline(a=0,b=1)
+plot(doc_pred1$pred, doc_pred2$pred, col=ifelse(doc_pred2$corr=="RIGHT","black","red"));abline(h=0)
+abline(a=0,b=1)
+eval_run(r_a02)
+table.freq(doc_pred1$corr)
+table.freq(doc_pred2$corr)
+write.table(doc_pred1,"lasso_fold1_docs",row.names=F,col.names=F,quote=F)
+write.table(doc_pred2,"a02_fold1_docs",row.names=F,col.names=F,quote=F)
+write_model(r_a02$m$beta[,1], "a02_model")
+write_model(r_lasso$m$beta[,1], "lasso_model")
+apply(cbind(doc_pred1$pred,doc_pred2$pred),1,mean)
+ord=order(apply(cbind(doc_pred1$pred,doc_pred2$pred),1,mean))
+ord
+write.table(doc_pred2[ord,],"a02_fold1_docs",row.names=F,col.names=F,quote=F)
+write.table(doc_pred1[ord,],"lasso_fold1_docs",row.names=F,col.names=F,quote=F)
+savehistory()
+which(doc_pred1$corr=="WRONG" & doc_pred2$corr=="RIGHT")
+doc_pred1[which(doc_pred1$corr=="WRONG" & doc_pred2$corr=="RIGHT"),]
+savehistory()
+gc)_
+gc)
+gc()
+ls()
+rm(r5_and50)
+rm(r5_bin)
+rm(r5_log)
+rm(r5_orig)
+rm(r5_works)
+rm(r5)
+gc()
+ls()
+rm(r)
+rm(m)
+g
+rm(g)
+rm(lin)
+rm(z)
+rm(z1)
+gc()
+savehistory();save.image()
+qplot(df,acc,group=alpha,colour=factor(alpha),data=subset(z,z$alpha!=0.2),geom='line',xlim=c(0,3000))+theme_bw()
+library(ggplot2)
+qplot(df,acc,group=alpha,colour=factor(alpha),data=subset(z,z$alpha!=0.2),geom='line',xlim=c(0,3000))+theme_bw()
+z=dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,lambda=res_alphas[[i]]$m$lambda,acc=res_alphas[[i]]$acc))
+source("r.r")
+alphas
+length(res_alphas)
+z=dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,lambda=res_alphas[[i]]$m$lambda,acc=res_alphas[[i]]$acc))
+qplot(df,acc,group=alpha,colour=factor(alpha),data=subset(z,z$alpha!=0.2),geom='line',xlim=c(0,3000))+theme_bw()
+qplot(df,acc,group=alpha,colour=factor(alpha),data=subset(z,z$alpha==0.05 | z$alpha==0.02),geom='line',xlim=c(0,3000))+theme_bw()
+qplot(df,acc,group=alpha,colour=factor(alpha),data=subset(z,z$alpha==0.05 | z$alpha==0.02),geom='line',xlim=c(0,3000), ylim=c(0.4,0.9))+theme_bw()
+spp[
+sp
+m=with(sp$train,glmnet(x[,z],y,alpha=.02,lambda=1.15))
+library(Matrix)
+library(glmnet)
+m=with(sp$train,glmnet(x[,z],y,alpha=.02,lambda=1.15))
+z
+z[which.max(z$acc),]
+z=z[z$alpha==0.05,]
+z[which.max(z$acc),]
+m=with(data,timeit(glmnet(x,y,family='binomial',lambda=.55,alpha=0.05)))
+word_report(m)
+word_report(m,sp)
+word_report(sp,m)
+word_report
+word_report(m$beta[,1],sp$train,sp$test)
+sp$train$df
+word_report(m,sp$train,sp$test)
+sp$train
+word_report(m,sp)
+data
+sp
+gc()
+m$beta[,1]
+gc()
+sp$train$df
+sp$df
+data$df
+gc()
+sp$train$df
+show_words(m$beta[,1])
+dim(show_words(m$beta[,1]))
+show_words(r_lasso$m$beta[,1])
+dim(show_words(r_lasso$m$beta[,1]))
+dim(show_words(r_lasso$m$beta[,1]))
+r_lasso
+dim(show_words(r_lasso$m$beta[,1]))
+show_words(m$beta[,1])
+dim(show_words(r_lasso$m$beta[,1]))
+dim(show_words(m$beta[,1]))
+write_model(m$beta[,1],"a05_434_best")
+qplot(df,acc,group=alpha,colour=factor(alpha),data=subset(z,z$alpha==0 | z$alpha==0.05),geom='line',xlim=c(0,3000), ylim=c(0.4,0.9))+theme_bw()
+z
+z=dfapply(1:length(alphas),function(i)data.frame(alpha=alphas[i],df=res_alphas[[i]]$m$df,lambda=res_alphas[[i]]$m$lambda,acc=res_alphas[[i]]$acc))
+z
+z
+z=z[z$alpha==1 | z$alpha==0.05,]
+qplot(df,acc,group=alpha,colour=factor(alpha),data=subset(z,z$alpha==1 | z$alpha==0.05),geom='line',xlim=c(0,3000), ylim=c(0.4,0.9))+theme_bw()
+sp$train=add_word_df(sp$train)
+sp$train$df
+sum(sp$train$df>0)
+z[which.max(z$acc),]
+z=z[z$alpha==1 | z$alpha==0.05,]
+z=z[z$alpha==1 | z$alpha==0.05,]
+z[which.max(z$acc),]
+z=z[z$alpha==1 ,]
+z[which.max(z$acc),]
